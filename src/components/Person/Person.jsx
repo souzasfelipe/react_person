@@ -1,9 +1,7 @@
-export const Person = ({ name, age="", partner }) => (
+export const Person = ({ person }) => (
   <div>
     <section className="Person">
-      <h2 className="Person__name">My name is {name}</h2>
-      <p className="Person__age"> {age}</p>
-      <p className="Person__partner">{partner}</p>
+      <h2 className="Person__name">My name is {person}</h2>
     </section>
   </div>
 );

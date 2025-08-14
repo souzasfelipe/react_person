@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.scss';
 import { Person } from './components/Person/Person';
+import { Age } from './components/Age/Age';
+import { Partner } from './components/Partner/Partner';
 
 export const misha = {
   name: 'Misha',
@@ -27,15 +29,19 @@ export const alex = {
 export const App = () => (
   <div className="App">
     <section className="Person">
-      <Person name="Misha" age="I am 37" partner="Alex is my husband" />
+      <Person person="misha" />
+      <Age age={37} />
+      <Partner partner="Natasha" />
     </section>
 
     <section className="Person">
-      <Person name="Olya"/>
+      <Person person="olya" />
+      <Partner partner="Maksym" />
     </section>
 
     <section className="Person">
-      <Person name="Alex" age="I am 25"partner="Misha is my wif" />
+      <Person person="alex" />
+      <Age age={25} />
     </section>
   </div>
 );
