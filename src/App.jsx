@@ -27,15 +27,15 @@ export const alex = {
 export const App = () => (
   <div className="App">
     <section className="Person">
-      <Person name="Misha" age={37} partner="wife" />
+      <Person name="Misha" age="I am 37" partner="Alex is my husband" />
     </section>
 
     <section className="Person">
-      <Person name="Olya" partner="husband" />
+      <Person name="Olya"/>
     </section>
 
     <section className="Person">
-      <Person name="Alex" age={25} partner="" />
+      <Person name="Alex" age="I am 25"partner="Misha is my wif" />
     </section>
   </div>
 );
